@@ -196,36 +196,30 @@ export const blogs = [
 
 export const entities = [
   {
-    sector: 'Not-for-profits',
-    description:
-      'We empower NGOs and social enterprises to amplify their impact through strategic support in areas like grant applications, fundraising, and programme development.',
+    sector: "Not-for-Profits",
+    description: "We empower NGOs, charities, and social enterprises to amplify their impact through strategic support in grant applications, fundraising, and programme development.",
+    image: '/assets/event-10.jpg'
   },
   {
-    sector: 'Private sector',
-    description:
-      'We partner with businesses to integrate social responsibility initiatives and contribute to the development agenda while achieving their own commercial goals.',
+    sector: "Private Sector",
+    description: "We partner with businesses to integrate social responsibility into operations, align commercial goals with the development agenda, and drive measurable social impact.",
+    image: '/assets/event-4.jpg'
   },
   {
-    sector: 'Sovereigns',
-    description:
-      'We fundraise for social impact initiatives of Government entities at all levels. We also collaborate to bridge the gap between policy design and effective implementation, ensuring development programmes reach their intended beneficiaries.',
+    sector: "Public Sector (Sovereigns)",
+    description: "We work with government entities to fundraise for social impact initiatives, bridge the gap between policy design and implementation, and ensure programmes reach their beneficiaries.",
+    image: '/assets/event-3.jpg'
   },
   {
-    sector: 'Sovereigns',
-    description:
-      'We fundraise for social impact initiatives of Government entities at all levels. We also collaborate to bridge the gap between policy design and effective implementation, ensuring development programmes reach their intended beneficiaries.',
-  },
-  {
-    sector: 'Sovereigns',
-    description:
-      'We fundraise for social impact initiatives of Government entities at all levels. We also collaborate to bridge the gap between policy design and effective implementation, ensuring development programmes reach their intended beneficiaries.',
-  },
-  {
-    sector: 'Sovereigns',
-    description:
-      'We fundraise for social impact initiatives of Government entities at all levels. We also collaborate to bridge the gap between policy design and effective implementation, ensuring development programmes reach their intended beneficiaries.',
-  },
-]
+    sector: "Cross-Sector Collaborators",
+    description: "We support partnerships that unite public, private, and non-profit actors to co-create scalable solutions for systemic challenges.",
+    image: '/assets/event-7.jpg'
+  }
+];
+
+
+  //   description:
+  //   description:
 
 // Make sure to import the icons at the top of your React file:
 // import { FaBrain, FaRegFileAlt, FaChartBar, FaGlobe, FaHandshake, FaLightbulb } from 'react-icons/fa';
@@ -299,3 +293,71 @@ actively contributing to a sustainable and prosperous future for all.`,
     image: 'src/vision.jpg',
   },
 ]
+
+export const companyAttributes = [
+  {
+    name: "mission",
+    id: 1,
+    description: "The mission outlines the fundamental purpose of the company, explaining why it exists and what it seeks to accomplish on a day-to-day basis, serving as a guide for all strategic and operational decisions."
+  },
+  {
+    name: "vision",
+    id: 2,
+    description: "The vision articulates a clear and inspiring long-term goal that the company aspires to achieve in the future, providing direction and motivation for employees, stakeholders, and customers alike."
+  },
+  {
+    name: "values",
+    id: 3,
+    description: "The values represent the deeply held principles and ethical standards that influence the company’s culture, guide behavior, and inform decisions, ensuring consistency and integrity across all levels of the organization."
+  }
+];
+
+
+export const events = [
+  {
+    id: 1,
+    name: 'The Ultimate Guide to Event Planning',
+    description:
+      "Discover key strategies and tools to plan a successful event, whether it's a wedding, conference, or birthday bash.",
+    image: '/assets/event-1.jpg',
+  },
+  {
+    id: 2,
+    name: 'How to Maximize Engagement at Your Events',
+    description:
+      'Learn how to boost audience participation and create memorable experiences that keep people coming back.',
+    image: '/assets/event-12.jpg',
+  },
+  {
+    id: 3,
+    name: 'Top 10 Event Themes That Never Fail',
+    description:
+      'Stuck on ideas? These crowd-pleasing event themes are sure to inspire your next big gathering.',
+    image: '/assets/event-3.jpg',
+  }]
+
+
+
+
+  export const approach = [
+    {
+      name: " Needs Assessment and Contextual Analysis",
+      description: "We begin with a comprehensive Needs Assessment, engaging NGOs, charities, and social enterprises to identify their unique challenges, goals, and operational contexts. ",
+      image: '/assets/needs.jpg'
+    },
+    {
+      name: " Strategic Alignment and Stakeholder Engagement",
+      description: "We initiate a process of Strategic Alignment by leveraging our sectoral expertise and established networks.",
+      image: '/assets/strategic.jpg'
+    },
+    {
+      name: " Solution Design and Co-Creation",
+      description: "In this phase, we apply Human-Centered Design and Co-Creation Methodologies to develop tailored, context-sensitive solutions.",
+      image: '/assets/solutions.jpg'
+    },
+    {
+      name: "Impact Evaluation & Systems Scaling",
+      description: "We implement robust Monitoring, Evaluation, and Learning (MEL) frameworks to assess outcomes and drive continuous improvement.",
+      image: '/assets/monitoring.jpg'
+    }
+  ]

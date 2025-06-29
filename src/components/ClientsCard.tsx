@@ -1,25 +1,32 @@
-import image from '../assets/event-1.jpg'
 
-const ClientsCard = () => {
+interface ClientsCardProps {
+  sector: string;
+  description: string;
+  bg: string; // background image or color
+}
+
+const ClientsCard = ({ sector, description, bg }: ClientsCardProps) => {
   return (
-    <div className='flex flex-col  h-[400px]  bg-[#f7fee7]'>
-      <div className='flex flex-col md:flex-row w-full h-full items-center justify-center gap-6 '>
-        <article className='w-full md:w-1/2  h-full p-4'>
-          <h4>Government</h4>
-          <p className='w-full mt-6'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            libero exercitationem dolorem amet magnam alias. Vero ipsam harum
-            corrupti deserunt eius animi quod repellendus. Quibusdam reiciendis
-            libero itaque corrupti vitae.
-          </p>
-        </article>
-        <div className='w-full md:w-1/2 h-full flex'>
-          <div className='w-[500px] '>
-            <img src={image} alt='' className='w-full h-full object-cover' />
+    <div className='group flex flex-col w-[350px] h-[400px] bg-[#f7fee7] relative overflow-hidden'>
+      <div
+        className="bg-cover bg-center h-full w-full flex flex-col items-center justify-center rounded-lg"
+        style={{ backgroundImage: bg }}
+      >
+        <div
+          className='absolute left-1/2 -translate-x-1/2 bottom-4 w-[90%] h-[30%] bg-white/80 backdrop-blur-md rounded-lg flex items-baseline justify-center p-4 transition-all duration-500 group-hover:h-[80%] z-10'
+        >
+          <div className="w-full flex flex-col">
+            <h4 className="font-bold">{sector}</h4>
+            <p className="block group-hover:hidden transition-all duration-300">
+              {description.length > 60 ? description.slice(0, 60) + '...' : description}
+            </p>
+            <p className="hidden group-hover:block transition-all duration-300">
+              {description}
+            </p>
           </div>
         </div>
       </div>
     </div>
-  )
-}
-export default ClientsCard
+  );
+};
+export default ClientsCard;

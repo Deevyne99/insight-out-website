@@ -1,5 +1,11 @@
 @import 'tailwindcss';
 
+:root {
+  --primary-blue: #1c98d3;
+  --primary-orange:#f16a30;
+  --background-light: #f5f3ff;
+}
+
 h1 {
   @apply text-3xl font-bold;
 }
@@ -14,3 +20,8 @@ h1 {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+p{
+  @apply text-gray-600 text-sm;
+}
+/* #1c98d3 */
+

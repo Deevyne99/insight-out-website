@@ -19,19 +19,19 @@ export const BlogContainer = () => {
   }
 
   return (
-    <div className='flex flex-col py-4'>
+    <div className='flex flex-col py-16'>
       <div className='flex mx-4 md:mx-12 items-center justify-between'>
-        <h3 className='text-xl font-bold'>Categories</h3>
+        <h2 className='text-2xl font-bold capitalize'>Explore our latest insight</h2>
         <div className='flex gap-2'>
           <button
             onClick={handlePrev}
-            className='px-3 py-1 bg-gray-200 rounded hover:bg-gray-300'
+            className='px-3 py-1 bg-[var(--primary-blue)] text-[#fff] rounded hover:bg-gray-300'
           >
             Prev
           </button>
           <button
             onClick={handleNext}
-            className='px-3 py-1 bg-gray-200 rounded hover:bg-gray-300'
+            className='px-3 py-1 bg-[var(--primary-blue)] text-[#fff] rounded hover:bg-gray-300'
           >
             Next
           </button>

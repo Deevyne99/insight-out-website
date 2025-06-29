@@ -1,6 +1,7 @@
 import AboutSection from '../components/AboutSection'
 import { BlogContainer } from '../components/BlogContainer'
 import ClientContainer from '../components/ClientContainer'
+import EventCardContainer from '../components/EventCardContainer'
 import HeroContainer from '../components/HeroContainer'
 import MissionCardContainer from '../components/MissionCardContainer'
 import ServiceCardContainner from '../components/ServiceCardContainer'
@@ -27,6 +28,9 @@ const Home = () => {
 
       <div>
         <ClientContainer />
+      </div>
+      <div>
+        <EventCardContainer />
       </div>
     </div>
   )

@@ -36,14 +36,14 @@ const ApproachContainer = () => {
             })
             .slice(0, 5)}
         </div>
-        <div className='flex flex-col justify-between gap-4  items-center'>
+        <div className='flex flex-col justify-center  gap-6  items-center'>
           {approach
             .map((item) => {
               const { name, description } = item
 
               return (
                 <div
-                  className={` w-full md:w-[1/2]  flex  items-center pr-8 md:pr-24 justify-center md:justify-between md:gap-12 gap-4 transition-transform duration-300 mx-auto `}
+                  className={` w-full  flex  items-center pr-8 md:pr-24 justify-center md:justify-between md:gap-12 gap-4 transition-transform duration-300 mx-auto `}
                   key={name}
                 >
                   <div className='flex   bg- w-full'>
@@ -65,9 +65,9 @@ const ApproachContainer = () => {
             })
             .slice(0, 4)}
         </div>
-        <div className='w-full h-full md:w-[50%] md:flex-row flex-col flex md:gap-4 gap-0 justify-center items-center'>
+        <div className='w-full h-full  md:flex-row flex-col flex md:gap-4 gap-0 justify-center items-center'>
           <div
-            className={`justify-center items-center h-full flex transition-transform duration-400 order-1 md:order-2 w-full $ `}
+            className={`justify-center items-center h-full flex transition-transform duration-400 order-1 md:order-2 w-full  `}
           >
             <img
               src={approach[productIndex].image}

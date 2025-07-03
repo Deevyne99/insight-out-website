@@ -4,13 +4,13 @@ import { useState, useEffect } from 'react'
 // import Logo from '@/assets/insight-out-logo.png'
 import { links } from '../../data/data'
 import { GrMenu } from 'react-icons/gr'
-// import Sidebar from './Sidebar'
 import { Link } from 'react-router-dom'
 import logo from '../../assets/insight-out-logo.png'
+import Sidebar from '../Sidebar'
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false)
-  // const [isSidebarOpen, setIsSidebarOpen] = useState(false)
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,9 +23,9 @@ const Navbar = () => {
     }
   }, [])
 
-  // const handleSidebarClose = () => {
-  //   setIsSidebarOpen(false)
-  // }
+  const handleSidebarClose = () => {
+    setIsSidebarOpen(false)
+  }
 
   return (
     <div
@@ -35,7 +35,9 @@ const Navbar = () => {
     >
       <nav className='flex flex-col'>
         <ul className='flex flex-row justify-between items-center py-4 mx-4 md:mx-12'>
+          <Link to={'/'}>
           <img src={logo} alt='logo' className='w-[100px]' />
+          </Link>
           <div className='sm:flex flex-row items-center justify-center hidden'>
             {links.map((link) => (
               <li key={link.id} className='mr-4'>
@@ -50,13 +52,13 @@ const Navbar = () => {
           </div>
           <button
             className='flex sm:hidden'
-            // onClick={() => setIsSidebarOpen(true)}
+            onClick={() => setIsSidebarOpen(true)}
           >
             <GrMenu className='text-2xl' />
           </button>
         </ul>
       </nav>
-      {/* <Sidebar isOpen={isSidebarOpen} handleSidebarClose={handleSidebarClose} /> */}
+      <Sidebar openSidebar={isSidebarOpen} handleOpenSidebar={handleSidebarClose} />
     </div>
   )
 }

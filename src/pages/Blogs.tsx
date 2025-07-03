@@ -1,4 +1,13 @@
+import BlogContainer from "../components/BlogContainer"
+
 const Blogs = () => {
-  return <div>Blogs</div>
+  return <div className="flex flex-col">
+    <div>
+
+    <BlogContainer />
+    </div>
+
+
+  </div>
 }
 export default Blogs

@@ -19,13 +19,13 @@ const ServiceCardContainner = ({
   data: DataProps[]
 }) => {
   return (
-    <article className='my-12 py-6 bg-[#f5f3ff]  w-full flex flex-col justify-center items-center'>
+    <article className='my-12 py-6  bg-[#f5f3ff]  w-full flex flex-col justify-center items-center'>
       <div className='mt-8'>
         <h2 className='flex flex-col text-4xl font-bold capitalize text-center '>
           {heading}
         </h2>
       </div>
-      <div className='my-8 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8 justify-center items-center '>
+      <div className='my-8  md:mx-0 mx-4 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8 justify-center items-center '>
         {data.map((service) => {
           return (
             <ServiceCard

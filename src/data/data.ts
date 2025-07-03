@@ -18,7 +18,7 @@ export const links = [
   { id: 1, name: 'home', url: '/' },
   { id: 2, name: 'about', url: '/about' },
   { id: 3, name: 'services', url: '/contact' },
-  { id: 4, name: 'services', url: '/blogs' },
+  { id: 4, name: 'blogs', url: '/blogs' },
 ]
 
 export const hero = [

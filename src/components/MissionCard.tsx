@@ -2,7 +2,7 @@
 import { FaQuoteLeft,FaQuoteRight } from "react-icons/fa";
 const MissionCard = ({description,name}:{description:string,name:string}) => {
   return (
-    <div className='flex flex-col md:w-1/2 '>
+    <div className='flex flex-col  md:w-1/2 '>
       <div className='flex justify-between gap-8'>
         <article className='w-full shadow-lg hover:shadow-2xl hover:scale-100 transition-transform duration-3000 ease-in-out rounded-md bg-white flex-col p-4 flex justify-center relative h-[300px]'> 
         <div>

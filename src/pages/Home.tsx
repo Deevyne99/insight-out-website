@@ -1,5 +1,5 @@
 import AboutSection from '../components/AboutSection'
-import { BlogContainer } from '../components/BlogContainer'
+import { BlogSlider } from '../components/BlogSlider'
 import ClientContainer from '../components/ClientContainer'
 import EventCardContainer from '../components/EventCardContainer'
 import HeroContainer from '../components/HeroContainer'
@@ -20,7 +20,7 @@ const Home = () => {
         <MissionCardContainer />
       </div>
       <div>
-        <BlogContainer />
+        <BlogSlider />
       </div>
       <div>
         <ServiceCardContainner heading={'what we do'} data={services} />

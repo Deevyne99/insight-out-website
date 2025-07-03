@@ -14,17 +14,17 @@ const EventCard = ({name,description,img,events,active,handleChange}:{name:strin
 
   return (
     <div className='flex flex-col h-[500px]  my-24'>
-        <div className="flex w-full justify-center items-center bg-[var(--background-light)] h-full">
-            <article ref={articleRef} className='w-full flex flex-col items-center   md:w-1/2 px-12  h-full my-auto justify-center'>
+        <div className="flex flex-col md:flex-row w-full justify-center items-center bg-[var(--background-light)] h-full">
+            <article ref={articleRef} className='w-full flex flex-col items-center order-2 md:order-1   md:w-1/2 md:px-12 px-4  h-full my-auto justify-center'>
             <h2>{name}</h2>
-                <p className='text-center mt-2'>{description} Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis ab et cupiditate doloremque corrupti maxime facere voluptas natus ea rerum optio id minus veniam architecto accusamus, dolores neque odio quam! Ad blanditiis perspiciatis suscipit voluptas consequuntur omnis, corporis non nihil tempore, iusto aliquid alias quibusdam soluta eius rem odio rerum?</p>
-                <div className='flex gap-4 mt-8'>
+                <p className='text-left md:text-center mt-2 md:p-6 p-0'>{description} Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis ab et cupiditate doloremque corrupti maxime facere voluptas natus ea rerum optio id minus veniam architecto accusamus, dolores neque odio quam! Ad blanditiis perspiciatis suscipit voluptas consequuntur omnis, corporis non nihil tempore, iusto aliquid alias quibusdam soluta eius rem odio rerum?</p>
+                <div className='flex gap-4 mt-8 '>
                   {events.map((event,index)=>{
                     return <div key={event.id} className={`h-[20px] p-1 w-[20px]  flex justify-center items-center rounded-full ${active === index? 'bg-[var(--primary-blue)]':"bg-white"} border border-[var(--primary-blue)] cursor-pointer`} onClick={()=>handleChange(index)}></div>
                   })}
                 </div>
             </article>
-            <div className='flex w-full md:w-1/2 h-full'>
+            <div className='flex order-1 md:order-2 w-full md:w-1/2 h-full'>
               <img ref={imgRef} src={img} alt="" className='w-full h-full object-cover object-center '/>
             </div>
         </div>

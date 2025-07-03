@@ -10,7 +10,7 @@ h1 {
   @apply text-3xl font-bold;
 }
 .container {
-  @apply mx-auto px-12;
+  @apply mx-auto md:px-12 px-4;
 }
 .no-scrollbar::-webkit-scrollbar {
   display: none;

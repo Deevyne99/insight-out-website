@@ -13,7 +13,7 @@ const EventCard = ({name,description,img,events,active,handleChange}:{name:strin
   const articleRef = useRef<HTMLElement>(null);
 
   return (
-    <div className='flex flex-col h-[500px]  my-24'>
+    <div className='flex flex-col h-[650px] md:h-[500px]  my-24'>
         <div className="flex flex-col md:flex-row w-full justify-center items-center bg-[var(--background-light)] h-full">
             <article ref={articleRef} className='w-full flex flex-col items-center order-2 md:order-1   md:w-1/2 md:px-12 px-4  h-full my-auto justify-center'>
             <h2>{name}</h2>

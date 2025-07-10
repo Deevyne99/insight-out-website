@@ -44,11 +44,13 @@ export const BlogSlider = () => {
         >
           <div className='flex gap-4 py-2 md:py-6'>
             {blogs.map((blog, index) => (
-              <BlogCard
+              <BlogCard 
                 key={index}
+                id={blog.id}
                 image={blog.image}
                 description={blog.description}
                 name={blog.name}
+                variant='slider'
               />
             ))}
           </div>

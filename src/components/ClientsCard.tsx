@@ -6,8 +6,9 @@ interface ClientsCardProps {
 }
 
 const ClientsCard = ({ sector, description, bg }: ClientsCardProps) => {
+
   return (
-    <div className='group flex flex-col w-[350px] h-[400px] bg-[#f7fee7] relative overflow-hidden'>
+    <div className='group flex flex-col w-full  md:max-w-[400px] h-[350px]  md:h-[400px] bg-[#f7fee7] relative overflow-hidden'>
       <div
         className="bg-cover bg-center h-full w-full flex flex-col items-center justify-center rounded-lg"
         style={{ backgroundImage: bg }}

@@ -18,9 +18,9 @@ const ApproachContainer = () => {
   }, [])
 
   return (
-    <div className='h-[550px] flex flex-col container w-full oveflow-hidden my-20 '>
-        <h2 className='flex justify-center items-center text-3xl font-bold'>Our Approach</h2>
-      <div className='flex justify-center  gap-6 w-full h-full mt-8'>
+    <div className='h-[550px] flex flex-col px-12 w-full oveflow-hidden my-20  '>
+        <h2 className='flex  justify-center items-center text-3xl font-bold'>Our Unique Approach</h2>
+      <div className='flex justify-center   gap-6 w-full h-full mt-8'>
         <div className=' flex flex-col bg-gray-100 justify-between'>
           {approach
             .map((item, index) => {
@@ -36,9 +36,9 @@ const ApproachContainer = () => {
             })
             .slice(0, 5)}
         </div>
-        <div className='flex flex-col justify-center  gap-6  items-center'>
+        <div className='flex flex-col justify-center  gap-6 items-center'>
           {approach
-            .map((item) => {
+            .map((item,index) => {
               const { name, description } = item
 
               return (
@@ -46,10 +46,10 @@ const ApproachContainer = () => {
                   className={` w-full  flex  items-center pr-8 md:pr-24 justify-center md:justify-between md:gap-12 gap-4 transition-transform duration-300 mx-auto `}
                   key={name}
                 >
-                  <div className='flex   bg- w-full'>
+                  <div className='flex   w-full'>
                     <article
-                      className={`flex w-[470px] flex-col transition-transform duration-400  bg-[var(--background-light)] p-2 `}
-                    >
+                      className={`flex w-lg flex-col transition-transform duration-400 ${productIndex === index? 'bg-[var(--background-light)]' :''} cursor-pointer  p-2`}
+                     onClick={() => handleSLider(index)}>
                       <div>
                         <h2 className='text-md md:text-left text-center text-[#94a3b8] max-w-[550px] font-bold'>
                           {name}
@@ -66,8 +66,8 @@ const ApproachContainer = () => {
             .slice(0, 4)}
         </div>
         <div className='w-full h-full  md:flex-row flex-col flex md:gap-4 gap-0 justify-center items-center'>
-          <div
-            className={`justify-center items-center h-full flex transition-transform duration-400 order-1 md:order-2 w-full  `}
+          <div 
+            className={`justify-center items-center h-full flex transition-transform duration-400 w-full order-1 md:order-2`}
           >
             <img
               src={approach[productIndex].image}

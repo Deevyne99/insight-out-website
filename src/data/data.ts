@@ -17,8 +17,8 @@ import {
 export const links = [
   { id: 1, name: 'home', url: '/' },
   { id: 2, name: 'about', url: '/about' },
-  { id: 3, name: 'services', url: '/contact' },
-  { id: 4, name: 'blogs', url: '/blogs' },
+  { id: 3, name: 'contact', url: '/contact' },
+  { id: 4, name: 'insight', url: '/insight' },
 ]
 
 export const hero = [

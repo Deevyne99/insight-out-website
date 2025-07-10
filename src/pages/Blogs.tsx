@@ -2,7 +2,7 @@ import BlogContainer from "../components/BlogContainer"
 
 const Blogs = () => {
   return <div className="flex flex-col">
-    <div>
+    <div className="mt-8">
 
     <BlogContainer />
     </div>

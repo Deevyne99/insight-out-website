@@ -1,5 +1,5 @@
 import { createBrowserRouter } from 'react-router-dom'
-import { About, Home, Careers, Blogs, Contact, NotFound,Blog } from './pages'
+import { About, Home, Careers, Blogs, Contact, NotFound,Blog,CreateInsight } from './pages'
 import App from './App'
 
 const router = createBrowserRouter([
@@ -14,6 +14,7 @@ const router = createBrowserRouter([
       { path: 'insight', element: <Blogs />, } ,
       { path: 'insight/:id', element: <Blog /> },
       { path: 'contact', element: <Contact /> },
+      { path: 'create-insight', element: <CreateInsight /> },
     ],
   },
   // { path: '/user/:id', element: <Profile /> },

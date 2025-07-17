@@ -38,7 +38,7 @@ export const hero = [
     description:
       'lorem hjgskfjnsdf gjbfibjgfjbf ghbskjgnsjkfbnkjbnkdgjbn jbnkgbjngbiugbnsigjn gjbngkbnfkjgbn gjbfkjbngj',
     img: '/assets/image-2.jpg',
-    color: '#f7fee7',
+    color: '#f5f3ff',
   },
   {
     id: 4,
@@ -54,9 +54,9 @@ export const hero = [
     title: 'Insight Out African Rising Giant',
     subtitle: 'the next big thing',
     description:
-      'lorem hjgskfjnsdf gjbfibjgfjbf ghbskjgnsjkfbnkjbnkdgjbn jbnkgbjngbiugbnsigjn gjbngkbnfkjgbn gjbfkjbngj',
+      'lorem hjgskfjnsdf gjbfibjgfjbf ghbskjgnsjkfbnkjbnkdgjbn jbnkgbjngbiugbnsigjn gjbngkbnfkjgbn gjbfkjbngj hello world',
     img: '/assets/image-2.jpg',
-    color: '#f7fee7',
+    color: '#f8fafc',
   },
   {
     id: 5,

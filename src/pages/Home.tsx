@@ -5,7 +5,9 @@ import EventCardContainer from '../components/EventCardContainer'
 import HeroContainer from '../components/HeroContainer'
 import MissionCardContainer from '../components/MissionCardContainer'
 import ServiceCardContainner from '../components/ServiceCardContainer'
+import TestimonialContainer from '../components/TestimonialContainer'
 import { services } from '../data/data'
+TestimonialContainer
 
 const Home = () => {
   return (
@@ -31,6 +33,9 @@ const Home = () => {
       </div>
       <div>
         <EventCardContainer />
+      </div>
+      <div>
+        <TestimonialContainer/>
       </div>
     </div>
   )

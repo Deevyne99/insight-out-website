@@ -1,5 +1,6 @@
 import AboutCard from '../components/AboutCard'
 import HeroContainer from '../components/HeroContainer'
+import MissionCardContainer from '../components/MissionCardContainer'
 import ApproachContainer from '../components/OurApproach'
 import ServiceCardContainner from '../components/ServiceCardContainer'
 import { developmentArray } from '../data/data'
@@ -21,6 +22,9 @@ export const About = () => {
       </div>
       <div>
         <ApproachContainer/>
+      </div>
+      <div>
+        <MissionCardContainer/>
       </div>
     </section>
   )

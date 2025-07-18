@@ -9,6 +9,7 @@ interface DataProps {
   color?: string
   title?: string
   name?: string
+  background?: string
 }
 
 const ServiceCardContainner = ({
@@ -34,6 +35,7 @@ const ServiceCardContainner = ({
               description={service.description}
               icon={service.icon}
               color={service.color}
+              background={service.background}
             />
           )
         })}

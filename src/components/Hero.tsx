@@ -1,5 +1,7 @@
 // import image from '../assets/image-1.jpg'
 
+import ButtonComponent from "./ButtonComponent"
+
 const Hero = ({
   title,
   image: img,
@@ -12,8 +14,8 @@ const Hero = ({
   return (
     <div className='flex flex-col w-full justify-center items-center bg-[#fff] md:px-12 px-4'>
       <div
-        className={`flex gap-4 mt-2 justify-between items-center w-full px-4 md:px-12  py-6 md:py-12 mx-4 md:mx-12 rounded-xl flex-col sm:flex-row`}
-        style={{ backgroundColor: color }}
+        className={`flex gap-4 mt-2 justify-between items-center w-full px-4 md:px-12  py-6 md:py-12 mx-4 md:mx-12 rounded-xl flex-col sm:flex-row `}
+         style={{ backgroundColor: color }}
       >
         <article className='flex flex-col w-full md:w-1/2 md:order-1 order-2'>
           <div className='flex flex-col w-full items-center justify-center sm:items-start mt-4'>
@@ -31,6 +33,10 @@ const Hero = ({
                 reiciendis, repellendus libero quaerat minima corrupti labore
                 eius magnam atque, pariatur neque numquam a quae.
               </p>
+              <div className="w-[150px]">
+
+              <ButtonComponent label="Get Started" className="mt-4"/>
+              </div>
             </div>
           </div>
         </article>

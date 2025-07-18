@@ -77,6 +77,7 @@ export const services = [
       'We identify suitable funding opportunities and strategically align them with your organizational goals, increasing your chances of success and long-term impact.',
     icon: FaHandHoldingUsd,
     color: '#7e22ce',
+    background:'#e5d3f5'
   },
 
   {
@@ -85,7 +86,8 @@ export const services = [
     description:
       'We position your organization as an authority through compelling content, insights, and strategic engagement that influence your sector and stakeholders.',
     icon: FaLightbulb,
-    color: '#fbbf24',
+    color: '#ef4444',
+    background:'#fcdada'
   },
   {
     id: 4,
@@ -94,6 +96,7 @@ export const services = [
       'From concept to implementation, we help you create well-structured, results-oriented programs that meet your objectives and serve your target audience effectively.',
     icon: FaProjectDiagram,
     color: '#facc15',
+    background:'#fef5d0'
   },
   {
     id: 5,
@@ -102,6 +105,7 @@ export const services = [
       'Our M&E frameworks track progress, measure impact, and inform improvements, ensuring accountability and learning throughout the program lifecycle.',
     icon: FaChartLine,
     color: '#22c55e',
+    background:'#d3f3df'
   },
   {
     id: 6,
@@ -110,6 +114,7 @@ export const services = [
       'We craft and deliver clear, compelling messages that communicate your mission, mobilize support, and build trust with partners and communities.',
     icon: FaBullhorn,
     color: `#f97316`,
+    background:'#fee3d0'
   },
   {
     id: 7,
@@ -118,6 +123,8 @@ export const services = [
       'We provide expert guidance in shaping, analyzing, and navigating policy and regulatory environments to support advocacy and compliance efforts.',
     icon: FaBalanceScale,
     color: `#d946ef`,
+    
+    background:'#f7dafc'
   },
 ]
 
@@ -231,6 +238,7 @@ export const developmentArray = [
     icon: FaBrain,
     description:
       'Offering deep knowledge and guidance in various development fields. Our experts bring years of hands-on experience to drive informed decision-making.',
+      background:'#dbe9f9'
   },
   {
     title: 'Policy Guidance',
@@ -238,6 +246,7 @@ export const developmentArray = [
     icon: FaRegFileAlt,
     description:
       'Providing informed policy recommendations for effective development. We help shape policies that align with both local context and global standards.',
+      background:'#dcf9f3'
   },
   {
     title: 'Results-Based Management',
@@ -245,6 +254,7 @@ export const developmentArray = [
     icon: FaChartBar,
     description:
       'Ensuring projects deliver tangible outcomes and measurable impact. Our approach emphasizes accountability and continuous improvement.',
+      background:'#fdedd3'
   },
   {
     title: 'Holistic Approach',
@@ -252,6 +262,7 @@ export const developmentArray = [
     icon: FaGlobe,
     description:
       'Integrating economic, social, and technical aspects for sustainable solutions. We consider the full ecosystem to create long-term value.',
+      background:'#f2cff9'
   },
   {
     title: 'Collaborative Network',
@@ -259,6 +270,7 @@ export const developmentArray = [
     icon: FaHandshake,
     description:
       'Working with passionate specialists to ensure thorough and contextually relevant approaches. Together, we leverage diverse expertise for greater impact.',
+      background:'#e5f6d3'
   },
   {
     title: 'Innovative Outcomes',
@@ -266,6 +278,7 @@ export const developmentArray = [
     icon: FaLightbulb,
     description:
       'Delivering creative and impactful solutions for optimal results. Innovation is at the heart of everything we do to overcome complex challenges.',
+      background:'#f6ccd1'
   },
 ]
 

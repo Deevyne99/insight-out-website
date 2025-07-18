@@ -5,11 +5,13 @@ const ServiceCard = ({
   description,
   icon: Icon,
   color,
+  background,
 }: {
   service: string
   description: string
   icon: IconType
   color?: string
+  background?: string
 }) => {
   {
     console.log(color)
@@ -17,9 +19,9 @@ const ServiceCard = ({
   return (
     <div className='flex bg-[#fff] shadow-xl hover:shadow-2xl flex-col p-4  w-full  md:w-[270px] h-[280px] hover:scale-105 transition-all duration-300 ease-in-out rounded-lg'>
       <div className='flex flex-col'>
-        <div className='flex flex-col text-[] rounded-full  mx-auto items-center h-16 w-16 justify-center'>
+        <div className='flex flex-col  rounded-full  mx-auto items-center h-12 w-12 justify-center' style={{background: background }}>
           <Icon
-            className={`text-4xl text-[${color}]`}
+            className={`text-2xl text-[${color}]`}
             style={{ color: color }}
           />
         </div>

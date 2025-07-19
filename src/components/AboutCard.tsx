@@ -2,9 +2,9 @@
 import image from '../assets/vision.jpg'
 const AboutCard = () => {
   return (
-    <div className='flex flex-col h-[500px] my-24'>
+    <div className='flex flex-col md:h-[500px] my-24 container '>
         <h2 className='text-2xl font-bold text-center capitalize'>who we are</h2>
-        <div className='flex justify-between gap-8 mt-8'>
+        <div className='flex-col md:flex-row flex justify-between gap-8 mt-8'>
             <div className='flex w-full md:w-1/2 h-full'>
                 <img src={image} alt="" />
             </div>

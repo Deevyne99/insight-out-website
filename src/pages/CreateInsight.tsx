@@ -1,3 +1,5 @@
+
+
 import ButtonComponent from "../components/ButtonComponent"
 import ImageUpload from "../components/ImageUpload"
 import InputComponent from "../components/InputComponent"
@@ -10,7 +12,7 @@ import TextAreaComponent from "../components/TextAreaComponent"
 const CreateInsight = () => {
   return (
     <div className="flex flex-col w-full mt-12">
-<div className="flex flex-col w-full items-center justify-center min-h-screen bg-gray-100 p-4">
+<div className="flex flex-col w-full items-center justify-center min-h-screen  p-4">
 <div className=" rounded-lg p-6 max-w-lg w-full">
   <ImageUpload/>
 </div>

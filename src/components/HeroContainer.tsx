@@ -1,5 +1,5 @@
 
-import { FaAngleLeft } from "react-icons/fa6";
+// import { FaAngleLeft } from "react-icons/fa6";
 import { useState, useEffect, useRef } from 'react'
 import Hero from './Hero'
 import { hero } from '../data/data'

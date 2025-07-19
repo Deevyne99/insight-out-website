@@ -14,7 +14,10 @@ function App() {
       <Navbar />
 
       <Outlet />
+      <div className='mt-24'>
+
       <Footer/>
+      </div>
     </div>
   )
 }

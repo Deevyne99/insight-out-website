@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { IoCloudUploadOutline } from "react-icons/io5";
+import {RiDeleteBin6Line} from "react-icons/ri";
 
 export default function ImageUpload() {
   const [image, setImage] = useState<string | ArrayBuffer | null>(null);
@@ -24,10 +25,10 @@ export default function ImageUpload() {
   };
 
   return (
-    <div className="w-full mx-auto p-4 bg-white rounded-2xl shadow-md">
+    <div className="w-full mx-auto p-4 bg-white rounded-xl shadow-md">
       {!image && (
         <label className="block w-full cursor-pointer">
-          <div className="flex items-center justify-center border-2 border-dashed border-gray-300 rounded-lg p-6 hover:border-blue-400 transition">
+          <div className="flex items-center justify-center border-2 border-dashed border-gray-300 rounded-lg p-2 hover:border-blue-400 transition">
             <span className="text-gray-500 flex flex-col items-center justify-center">
               <IoCloudUploadOutline className="w-8 h-4 mb-2 text-2xl" />
               Click or drag to upload an image
@@ -53,9 +54,9 @@ export default function ImageUpload() {
          {deleteImage && <button
             type="button"
             onClick={handleRemoveImage}
-            className={`mt-2 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 transition absolute top-0 right-0 m-4 `}
+            className={`mt-2   transition absolute top-0 right-0 m-4 `}
           >
-            Remove Image
+            <RiDeleteBin6Line className="w-5 h-5 text-[var(--primary-blue)] " />
           </button>} 
         </div>
       )}

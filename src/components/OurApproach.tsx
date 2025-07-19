@@ -18,10 +18,10 @@ const ApproachContainer = () => {
   }, [])
 
   return (
-    <div className='h-[550px] flex flex-col px-12 w-full oveflow-hidden my-20  '>
-        <h2 className='flex  justify-center items-center text-3xl font-bold'>Our Unique Approach</h2>
-      <div className='flex justify-center   gap-6 w-full h-full mt-8'>
-        <div className=' flex flex-col bg-gray-100 justify-between'>
+    <div className='h-[500px] flex flex-col container w-full oveflow-hidden my-20  '>
+        <h2 className='flex  justify-center items-center text-3xl font-bold w-full'>Our Unique Approach</h2>
+      <div className='flex justify-center flex-col md:flex-row gap-6 w-full h-full mt-8'>
+        <div className='hidden md:flex flex-col order-1 bg-gray-100 justify-between'>
           {approach
             .map((item, index) => {
               return (
@@ -36,14 +36,14 @@ const ApproachContainer = () => {
             })
             .slice(0, 5)}
         </div>
-        <div className='flex flex-col justify-center  gap-6 items-center'>
+        <div className='flex w-1/2 order-2 flex-col justify-center   gap-6 items-center'>
           {approach
             .map((item,index) => {
               const { name, description } = item
 
               return (
                 <div
-                  className={` w-full  flex  items-center pr-8 md:pr-24 justify-center md:justify-between md:gap-12 gap-4 transition-transform duration-300 mx-auto `}
+                  className={` w-full hidden  md:flex  items-center pr-8 md:pr-24 justify-center md:justify-between md:gap-12 gap-4 transition-transform duration-300 mx-auto `}
                   key={name}
                 >
                   <div className='flex   w-full'>
@@ -65,7 +65,26 @@ const ApproachContainer = () => {
             })
             .slice(0, 4)}
         </div>
-        <div className='w-full h-full  md:flex-row flex-col flex md:gap-4 gap-0 justify-center items-center'>
+        <div
+                  className={` w-full flex order-2 md:hidden   items-center  justify-center md:justify-between md:gap-12 gap-4 transition-transform duration-300 mx-auto `}
+                  
+                >
+                  <div className='flex   w-full'>
+                    <article
+                      className={`flex w-lg flex-col transition-transform duration-400 bg-[var(--background-light)]cursor-pointer  p-2`}
+                     >
+                      <div>
+                        <h2 className='text-md md:text-left text-center text-[#94a3b8] max-w-[550px] font-bold'>
+                          {approach[productIndex].name }
+                        </h2>
+                        <p className='text-[#94a3b8] w-full  p-2 text-center md:text-left text-sm'>
+                          {approach[productIndex].description}      
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+        <div className='w-full md:w-1/2 h-full order-1 md:order-3  md:flex-row flex-col flex md:gap-4 gap-0 justify-center items-center'>
           <div 
             className={`justify-center items-center h-full flex transition-transform duration-400 w-full order-1 md:order-2`}
           >
@@ -76,6 +95,14 @@ const ApproachContainer = () => {
             />
           </div>
         </div>
+
+     <div className='flex order-3 md:hidden gap-4  justify-center '>
+                  {approach.map((event,index)=>{
+                    return <div key={event.name} className={`h-[20px] p-1 w-[20px]  flex justify-center items-center rounded-full ${productIndex === index? 'bg-[var(--primary-blue)]':"bg-[var(--background-light)]"} cursor-pointer`} onClick={()=>handleSLider(index)}></div>
+                  })}
+                </div>
+
+
       </div>
     </div>
   )

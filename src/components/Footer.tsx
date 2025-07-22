@@ -19,9 +19,9 @@ const Footer = () => {
           <Link to="/" className="w-[120px] mb-2">
             <img src={logo} alt="Insight Out Logo" className="w-full" />
           </Link>
-          <p className="text-[#fff] mt-4">
+          <span className="text-[#fff] mt-4 text-sm">
             Your trusted partner in innovative solutions.
-          </p>
+          </span>
           <div className="flex gap-3 mt-2">
             <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X">
               <FaXTwitter className="text-white text-2xl hover:text-[var(--primary-orange)] transition" />

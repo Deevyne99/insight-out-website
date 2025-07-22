@@ -7,7 +7,7 @@ import { hero } from '../data/data'
 const HeroContainer = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isTransitioning, setIsTransitioning] = useState(true)
-  const timeoutRef = useRef<NodeJS.Timeout | null>(null)
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
   const slideCount = hero.length
   const handleChange =(index:number)=>setCurrentSlide(index)
 

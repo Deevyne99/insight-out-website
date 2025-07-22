@@ -24,7 +24,7 @@ const ClientContainer = () => {
         <ClientsCard key={entities[activeIndex].sector} description={entities[activeIndex].description} sector={entities[activeIndex].sector} bg={`url('${entities[activeIndex].image}')`}/>
         <div className='flex md:hidden gap-4 mt-8 '>
                   {entities.map((event,index)=>{
-                    return <div key={event.sector} className={`h-[20px] p-1 w-[20px]  flex justify-center items-center rounded-full ${activeIndex === index? 'bg-[var(--primary-blue)]':"bg-white"} border border-[var(--primary-blue)] cursor-pointer`} onClick={()=>handleChange(index)}></div>
+                    return <div key={event.sector} className={`h-[20px] p-1 w-[20px]  flex justify-center items-center rounded-full ${activeIndex === index? 'bg-[var(--primary-blue)]':"bg-white"} border cursor-pointer`} onClick={()=>handleChange(index)}></div>
                   })}
                 </div>
         </div>

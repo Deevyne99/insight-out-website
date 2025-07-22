@@ -11,7 +11,7 @@ const ClientContainer = () => {
   }
   
   return (
-    <div className='flex flex-col my-12 container'>
+    <div className='flex flex-col  container'>
       
       <h2 className='text-2xl font-bold mb-4'>Who We Serve</h2>
       <div className='flex mt-4'>

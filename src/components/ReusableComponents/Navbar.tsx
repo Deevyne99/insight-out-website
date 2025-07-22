@@ -43,7 +43,7 @@ const Navbar = () => {
               <li key={link.id} className='mr-4'>
                 <Link
                   to={link.url}
-                  className='text-gray-800 hover:text-blue-500 capitalize'
+                  className='text-gray-800 hover:text-[var(--primary-blue)] capitalize'
                 >
                   {link.name}
                 </Link>

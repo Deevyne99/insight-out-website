@@ -15,26 +15,26 @@ const Home = () => {
       <div className='mt-12'>
         <HeroContainer />
       </div>
-      <div>
+      <div className='flex flex-col md:py-16 py-12'>
         <AboutSection />
       </div>
-      <div>
+      <div className='flex flex-col md:py-16 py-12'>
         <MissionCardContainer />
       </div>
-      <div>
+      <div className='flex flex-col md:py-16 py-12'>
         <BlogSlider />
       </div>
-      <div>
+      <div className='flex flex-col md:py-16 py-12'>
         <ServiceCardContainner heading={'what we do'} data={services} />
       </div>
 
-      <div>
+      <div className='flex flex-col md:py-16 py-12'>
         <ClientContainer />
       </div>
-      <div>
+      <div className='flex flex-col md:py-16 py-12'>
         <EventCardContainer />
       </div>
-      <div>
+      <div className='flex flex-col md:py-16 py-12'>
         <TestimonialContainer/>
       </div>
     </div>

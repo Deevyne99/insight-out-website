@@ -2,6 +2,8 @@
 import { Link } from 'react-router-dom'
 import { FiX } from 'react-icons/fi'
 import Modal from './Modal'
+import { links } from '../data/data'
+
 
 // import React from 'react'
 interface SidebarProps {
@@ -23,9 +25,12 @@ const Sidebar = ({ openSidebar, handleOpenSidebar }: SidebarProps) => {
           <FiX />
         </button>
         <ul className='gap-8 flex flex-col text-[#94a3b8] capitalize font-bold'>
-          <Link to={'/'}>Home</Link>
-          <Link to={'/login'}>login</Link>
-          <Link to={'/register'}>register</Link>
+          {links.map((link) => (
+            <li key={link.id} className='hover:text-[var(--primary-blue)] transition-colors duration-300'>
+              <Link onClick={()=>handleOpenSidebar()} to={link.url}>{link.name}</Link>
+            </li>
+          ))}
+         
         </ul>
       </aside>
     </Modal>

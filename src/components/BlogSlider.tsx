@@ -19,7 +19,7 @@ export const BlogSlider = () => {
   }
 
   return (
-    <div className='flex flex-col py-16'>
+    <div className='flex flex-col '>
       <div className='flex flex-col md:flex-row mx-4 md:mx-12 items-center justify-between'>
         <h2 className='text-2xl font-bold capitalize'>Explore our latest insight</h2>
         <div className='flex gap-2 ml-auto'>

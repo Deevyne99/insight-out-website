@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom'
 import image from '../../src/assets/event-1.jpg'
 const AboutSection = () => {
   return (
-    <div className='flex flex-col py-20 container w-full'>
+    <div className='flex flex-col container w-full'>
       <div className='flex flex-col md:flex-row justify-center items-center mb-4'>
-        <h1 className=''>About us</h1>
+        <h2 className=''>About us</h2>
       </div>
       <div className='flex flex-col md:flex-row justify-between items-center  gap-8'>
         <div className='flex w-full md:w-1/2'>

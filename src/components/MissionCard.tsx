@@ -10,7 +10,7 @@ const MissionCard = ({description,name}:{description:string,name:string}) => {
           <FaQuoteRight className='absolute bottom-2 right-2 text-[var(--primary-orange)] text-3xl ' />
         </div>
           <div className='w-full '>
-            <h2 className='capitalize font-bold text-2xl mt-8 text-[var(--primary-blue)]'>{name}</h2>
+            <h3 className='capitalize font-bold text-2xl mt-8 text-[var(--primary-blue)]'>{name}</h3>
           </div>
           <div className='w-full flex  flex-col items-center justify-center '>
             <p className='mt-4 text-sm text-gray-600'>

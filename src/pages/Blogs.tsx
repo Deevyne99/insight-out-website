@@ -8,7 +8,7 @@ Create Insight
 </Link>
     <div className=" flex flex-col mt-8">
 
-    <BlogContainer />
+    <BlogContainer variant='container' />
     </div>
 
 

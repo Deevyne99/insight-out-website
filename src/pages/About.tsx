@@ -11,19 +11,19 @@ export const About = () => {
       <div>
         <HeroContainer />
       </div>
-      <div>
+      <div className='flex flex-col md:py-16 py-12'>
         <AboutCard/>
       </div>
-      <div>
+      <div className='flex flex-col md:py-16 py-12'>
         <ServiceCardContainner
           data={developmentArray}
           heading='Why choose us'
         />
       </div>
-      <div>
+      <div className='flex flex-col md:py-16 py-12'>
         <ApproachContainer/>
       </div>
-      <div>
+      <div className='flex flex-col md:py-16 py-12'>
         <MissionCardContainer/>
       </div>
     </section>

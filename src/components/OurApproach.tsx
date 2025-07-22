@@ -18,7 +18,7 @@ const ApproachContainer = () => {
   }, [])
 
   return (
-    <div className='h-[500px] flex flex-col container w-full oveflow-hidden my-20  '>
+    <div className='md:h-[550px]   flex flex-col container w-full oveflow-hidden   '>
         <h2 className='flex  justify-center items-center text-3xl font-bold w-full'>Our Unique Approach</h2>
       <div className='flex justify-center flex-col md:flex-row gap-6 w-full h-full mt-8'>
         <div className='hidden md:flex flex-col order-1 bg-gray-100 justify-between'>
@@ -51,9 +51,9 @@ const ApproachContainer = () => {
                       className={`flex w-lg flex-col transition-transform duration-400 ${productIndex === index? 'bg-[var(--background-light)]' :''} cursor-pointer  p-2`}
                      onClick={() => handleSLider(index)}>
                       <div>
-                        <h2 className='text-md md:text-left text-center text-[#94a3b8] max-w-[550px] font-bold'>
+                        <h4 className='text-md md:text-left text-center text-[#94a3b8] max-w-[550px] font-bold'>
                           {name}
-                        </h2>
+                        </h4>
                         <p className='text-[#94a3b8] w-full  p-2 text-center md:text-left text-sm'>
                           {description  }
                         </p>
@@ -71,12 +71,12 @@ const ApproachContainer = () => {
                 >
                   <div className='flex   w-full'>
                     <article
-                      className={`flex w-lg flex-col transition-transform duration-400 bg-[var(--background-light)]cursor-pointer  p-2`}
+                      className={`flex w-lg -mt-8 flex-col transition-transform duration-400 bg-[var(--background-light)]cursor-pointer  p-2`}
                      >
                       <div>
-                        <h2 className='text-md md:text-left text-center text-[#94a3b8] max-w-[550px] font-bold'>
+                        <h4 className='text-md md:text-left text-center text-[#94a3b8] max-w-[550px] font-bold'>
                           {approach[productIndex].name }
-                        </h2>
+                        </h4>
                         <p className='text-[#94a3b8] w-full  p-2 text-center md:text-left text-sm'>
                           {approach[productIndex].description}      
                         </p>
@@ -101,8 +101,6 @@ const ApproachContainer = () => {
                     return <div key={event.name} className={`h-[20px] p-1 w-[20px]  flex justify-center items-center rounded-full ${productIndex === index? 'bg-[var(--primary-blue)]':"bg-[var(--background-light)]"} cursor-pointer`} onClick={()=>handleSLider(index)}></div>
                   })}
                 </div>
-
-
       </div>
     </div>
   )

@@ -5,12 +5,15 @@
 import { Outlet } from 'react-router'
 import Navbar from './components/ReusableComponents/Navbar'
 import Footer from './components/Footer'
+import ScrollToTop from './components/ScrollToTop'
+
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <div className=''>
+      <ScrollToTop/>
       <Navbar />
 
       <Outlet />

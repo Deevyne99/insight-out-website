@@ -17,7 +17,7 @@ const BlogCard = ({
   variant: string
 }) => {
   return (
-    <Link to={`/insight/${id}`} className='flex w-full max-w-[300px] h-[380px] flex-col p-4 hover:scale-102  cursor-pointer shadow-lg hover:shadow-3xl rounded-md transform transition-all duration-300 ease-in-out'>
+    <Link to={`/insight/${id}`} className='flex w-full max-w-[300px] h-[380px] flex-col p-4 hover:scale-102  cursor-pointer shadow-lg hover:shadow-3xl rounded-md transform transition-all duration-300 ease-in-out '>
       <div className={`${variant ==='container'? 'w-full':"w-[250px]" }  flex flex-col`}>
         <img src={image} alt='blog image' className='rounded-md mb-4 w-full object-cover' />
       </div>

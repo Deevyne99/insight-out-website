@@ -8,14 +8,7 @@ const EventCardContainer = () => {
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null)
 
   // Function to go to next event
-  const nextEvent = () => {
-    setActive((prev) => (prev + 1) % events.length)
-  }
-
-  // Function to go to previous event
-  const prevEvent = () => {
-    setActive((prev) => (prev - 1 + events.length) % events.length)
-  }
+ 
 
   // Function to set a specific event
   const handleChange = (event: number) => setActive(event)

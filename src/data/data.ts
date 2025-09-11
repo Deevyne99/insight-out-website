@@ -24,50 +24,42 @@ export const links = [
 export const hero = [
   {
     id: 1,
-    title: 'Insight Out African Rising Giant',
-    subtitle: 'the next big thing',
+    title: 'InsightOut',
+    subtitle: 'Dream. Do.',
     description:
-      'lorem hjgskfjnsdf gjbfibjgfjbf ghbskjgnsjkfbnkjbnkdgjbn jbnkgbjngbiugbnsigjn gjbngkbnfkjgbn gjbfkjbngj',
+      'At InsightOut, we believe every bold dream deserves a pathway to reality. We transform visionary ideas into actionable strategies through innovation, collaboration, and purpose-driven execution—empowering individuals and organisations to achieve impact that truly matters.',
     img: '/assets/image-1.jpg',
-    color: `#f5f3ff`,
+    color: '#f5f3ff',
   },
   {
     id: 2,
-    title: 'Insight Out African Rising Giant',
-    subtitle: 'the next big thing',
+    title: 'InsightOut',
+    subtitle: 'Lead. Transform.',
     description:
-      'lorem hjgskfjnsdf gjbfibjgfjbf ghbskjgnsjkfbnkjbnkdgjbn jbnkgbjngbiugbnsigjn gjbngkbnfkjgbn gjbfkjbngj',
+      'Leadership is more than direction—it’s transformation. We guide organisations to navigate change with confidence, unlock their full potential, and implement scalable solutions that not only create growth but also deliver lasting value to communities worldwide.',
     img: '/assets/image-2.jpg',
     color: '#f5f3ff',
   },
   {
     id: 4,
-    title: 'Insight Out African Rising Giant',
-    subtitle: 'the next big thing',
+    title: 'InsightOut',
+    subtitle: 'Create. Scale.',
     description:
-      'lorem hjgskfjnsdf gjbfibjgfjbf ghbskjgnsjkfbnkjbnkdgjbn jbnkgbjngbiugbnsigjn gjbngkbnfkjgbn gjbfkjbngj',
+      'Great ideas deserve more than a start—they deserve momentum. From conception to execution, we design programmes and initiatives with the power to grow alongside your vision, ensuring that innovation turns into sustainable and scalable progress over time.',
     img: '/assets/image-2.jpg',
     color: '#fdf2f8',
   },
   {
     id: 5,
-    title: 'Insight Out African Rising Giant',
-    subtitle: 'the next big thing',
+    title: 'InsightOut',
+    subtitle: 'Innovate. Sustain.',
     description:
-      'lorem hjgskfjnsdf gjbfibjgfjbf ghbskjgnsjkfbnkjbnkdgjbn jbnkgbjngbiugbnsigjn gjbngkbnfkjgbn gjbfkjbngj hello world',
+      'Innovation should not be fleeting—it should endure. We deliver forward-thinking, creative strategies that embrace sustainability at every stage, enabling organisations to push boundaries, inspire change, and contribute to a future that is prosperous and equitable for all.',
     img: '/assets/image-2.jpg',
     color: '#f8fafc',
   },
-  {
-    id: 5,
-    title: 'Insight Out African Rising Giant',
-    subtitle: 'the next big thing',
-    description:
-      'lorem hjgskfjnsdf gjbfibjgfjbf ghbskjgnsjkfbnkjbnkdgjbn jbnkgbjngbiugbnsigjn gjbngkbnfkjgbn gjbfkjbngj',
-    img: '/assets/image-2.jpg',
-    color: '#faf5ff',
-  },
-]
+];
+
 
 export const services = [
   {
@@ -205,7 +197,7 @@ export const entities = [
   {
     sector: "Not-for-Profits",
     description: "We empower NGOs, charities, and social enterprises to amplify their impact through strategic support in grant applications, fundraising, and programme development.",
-    image: '/assets/event-10.jpg'
+    image: '/assets/ngo-image.jpg'
   },
   {
     sector: "Private Sector",
@@ -282,6 +274,8 @@ export const developmentArray = [
   },
 ]
 
+
+
 export const infoArray = [
   {
     id: 1,
@@ -305,25 +299,20 @@ and assistance necessary to reach its goals and audience, while
 actively contributing to a sustainable and prosperous future for all.`,
     image: 'src/vision.jpg',
   },
+  {
+    id: 3,
+    name: 'values',
+    description: `Our values shape the way we work and the impact we create. 
+We believe in accountability, ensuring that every project delivers measurable 
+results. We value collaboration, working closely with diverse stakeholders to 
+design context-sensitive solutions. We prioritise innovation, constantly seeking 
+creative approaches to complex challenges. Above all, we are committed to 
+sustainability and inclusivity, ensuring that our work contributes to lasting, 
+positive change. `,
+    image: 'src/values.jpg',
+  }
 ]
 
-export const companyAttributes = [
-  {
-    name: "mission",
-    id: 1,
-    description: "The mission outlines the fundamental purpose of the company, explaining why it exists and what it seeks to accomplish on a day-to-day basis, serving as a guide for all strategic and operational decisions."
-  },
-  {
-    name: "vision",
-    id: 2,
-    description: "The vision articulates a clear and inspiring long-term goal that the company aspires to achieve in the future, providing direction and motivation for employees, stakeholders, and customers alike."
-  },
-  {
-    name: "values",
-    id: 3,
-    description: "The values represent the deeply held principles and ethical standards that influence the company’s culture, guide behavior, and inform decisions, ensuring consistency and integrity across all levels of the organization."
-  }
-];
 
 
 export const events = [

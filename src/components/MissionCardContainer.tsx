@@ -1,4 +1,4 @@
-import { companyAttributes } from '../data/data'
+import { infoArray } from '../data/data'
 import MissionCard from './MissionCard'
 
 
@@ -8,7 +8,7 @@ const MissionCardContainer = () => {
     <div className=' flex flex-col bg-[var(--background-light)]  py-24'>
       <div className='container flex   flex-col md:flex-row  gap-6'>
         {
-          companyAttributes.map((attribute) =>{
+          infoArray.map((attribute) =>{
 
             return (<MissionCard name={attribute.name} description={attribute.description} key={attribute.id}/>)
           })

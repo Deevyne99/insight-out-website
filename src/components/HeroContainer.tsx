@@ -75,7 +75,7 @@ const HeroContainer = () => {
       >
         {hero.map((item) => (
           <div key={item.id} className='w-full flex-shrink-0'>
-            <Hero title={item.title} color={item.color} image={item.img} />
+            <Hero title={item.title} color={item.color} image={item.img} description={item.description} subtitle={item.subtitle}/>
           </div>
         ))}
       </div>

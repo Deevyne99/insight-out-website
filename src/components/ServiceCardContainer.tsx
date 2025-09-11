@@ -20,9 +20,9 @@ const ServiceCardContainner = ({
   data: DataProps[]
 }) => {
   return (
-    <article className=' py-16 gap-4 bg-[#f5f3ff]  w-full flex flex-col justify-center items-center'>
+    <article className=' py-16 gap-4  bg-[#f5f3ff]  w-full flex flex-col justify-center items-center'>
       <div className=' flex flex-col '>
-        <h2 className='flex flex-col  font-bold capitalize text-center '>
+        <h2 className='flex flex-col  font-bold capitalize text-center poppins-extrabold '>
           {heading}
         </h2>
       </div>

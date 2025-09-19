@@ -3,13 +3,13 @@
 import ButtonComponent from "./ButtonComponent"
 
 const Hero = ({
-  title,
+ 
   image: img,
   color,
   description,
   subtitle
 }: {
-  title: string
+ 
   color?: string
   image: string
   description:string

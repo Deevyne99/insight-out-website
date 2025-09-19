@@ -51,9 +51,9 @@ const ApproachContainer = () => {
                       className={`flex w-lg flex-col transition-transform duration-400 ${productIndex === index? 'bg-[var(--background-light)]' :''} cursor-pointer  p-2`}
                      onClick={() => handleSLider(index)}>
                       <div>
-                        <h4 className='text-md md:text-left text-center text-[#94a3b8] max-w-[550px] font-bold'>
+                        <h5 className='text-md md:text-left text-center text-[#94a3b8] max-w-[550px] font-bold'>
                           {name}
-                        </h4>
+                        </h5>
                         <p className='text-[#94a3b8] w-full  p-2 text-center md:text-left text-sm'>
                           {description  }
                         </p>
@@ -74,9 +74,9 @@ const ApproachContainer = () => {
                       className={`flex w-lg -mt-8 flex-col transition-transform duration-400 bg-[var(--background-light)]cursor-pointer  p-2`}
                      >
                       <div>
-                        <h4 className='text-md md:text-left text-center text-[#94a3b8] max-w-[550px] font-bold'>
+                        <h6 className='text-md md:text-left text-center text-[#94a3b8] max-w-[550px] font-bold'>
                           {approach[productIndex].name }
-                        </h4>
+                        </h6>
                         <p className='text-[#94a3b8] w-full  p-2 text-center md:text-left text-sm'>
                           {approach[productIndex].description}      
                         </p>

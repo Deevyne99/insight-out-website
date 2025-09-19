@@ -19,7 +19,7 @@ const TextAreaComponent: React.FC<TextAreaComponentProps> = ({
       <textarea
         className="px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400 transition-all text-base resize-none"
         {...props}
-        rows={10}
+        rows={7}
       />
       {error && <span className="text-xs text-red-500 mt-1">{error}</span>}
     </div>

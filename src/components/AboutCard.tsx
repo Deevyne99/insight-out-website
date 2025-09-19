@@ -9,8 +9,14 @@ const AboutCard = () => {
                 <img src={image} alt="" />
             </div>
             <article className='flex gap-y-12 flex-col w-full md:w-1/2  h-full  justify-center pr-8'>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aperiam odio iste quo. Mollitia, adipisci asperiores. Officiis tempora consequatur eveniet eos eius quos sed aliquid quisquam quaerat sequi autem quas soluta, obcaecati impedit aspernatur quam similique? Ad ea quia aperiam deleniti. Itaque aperiam ratione aliquid nemo cupiditate sit saepe dicta suscipit quia ea laboriosam, corporis ipsum, eos deleniti molestias omnis praesentium modi ab corrupti. Porro magni fugiat impedit possimus rem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae veniam sapiente id et, doloremque odit saepe molestiae veritatis aperiam, molestias fugiat corporis cum quam culpa nobis quia quasi voluptatum. Inventore architecto, facilis aliquid saepe quos velit amet rerum voluptatum ad suscipit libero cum nulla a laborum, ut totam animi eius explicabo adipisci voluptas. </p>
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum at ut dolorum quis et possimus esse placeat ex nulla perferendis, quisquam maxime fuga ipsa nam rerum dolorem temporibus iste minima nemo dolor minus eos error tempore omnis? Reprehenderit, accusamus enim. Ad neque magni quos eligendi aliquam quasi! Suscipit debitis ducimus, nostrum ut id non quia eligendi esse delectus beatae molestias exercitationem eius laborum reiciendis earum consequuntur. Repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nemo rerum eum harum adipisci explicabo nihil reprehenderit cum id eius, quidem, doloribus magni officia aut rem mollitia, aspernatur dicta! Neque.</p>
+<p>InsightOut partners with leaders across sectors to translate bold development visions into measurable impact for today and resilience for tomorrow. By combining policy expertise, technical knowledge, and results-based management, we help governments, NGOs, and businesses navigate complexity with clarity. Our purpose is to bridge the gap between ambition and achievement, enabling organizations to create meaningful, lasting change. We bring together a collaborative network of specialists and a multidisciplinary approach that integrates economic, social, and technical perspectives. From policy design and fundraising strategies to programme execution and evaluation, we provide end-to-end support that ensures initiatives are not only effective but also inclusive and future-ready.</p>
+
+<p>
+  We align local insights with global best practices, we help our partners achieve outcomes that endure beyond the lifespan of any single project.
+Driven by values of integrity, innovation, and accountability, we measure our success in tangible outcomes that improve lives and strengthen institutions. We are committed to fostering equitable progress, championing sustainability, and ensuring every solution contributes to a more resilient, prosperous future for all. InsightOut doesn’t just design strategies, we bring ideas to life.
+</p>
+ 
+
             </article>
         </div>
     </div>

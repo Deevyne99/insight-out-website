@@ -27,7 +27,7 @@ export const hero = [
     title: 'InsightOut',
     subtitle: 'Dream. Do.',
     description:
-      'At InsightOut, we believe every bold dream deserves a pathway to reality. We transform visionary ideas into actionable strategies through innovation, collaboration, and purpose-driven execution—empowering individuals and organisations to achieve impact that truly matters.',
+      'At InsightOut, we believe every bold dream deserves a pathway to reality. We transform visionary ideas into actionable strategies through innovation, collaboration, and purpose-driven individuals and organisations to achieve impact that truly matters.',
     img: '/assets/image-1.jpg',
     color: '#f5f3ff',
   },
@@ -36,7 +36,7 @@ export const hero = [
     title: 'InsightOut',
     subtitle: 'Lead. Transform.',
     description:
-      'Leadership is more than direction—it’s transformation. We guide organisations to navigate change with confidence, unlock their full potential, and implement scalable solutions that not only create growth but also deliver lasting value to communities worldwide.',
+      'Leadership is more than direction, it’s transformation. We guide organisations to navigate change with confidence, unlock their full potential, and implement scalable solutions that not only create growth but also deliver lasting value to communities worldwide.',
     img: '/assets/image-2.jpg',
     color: '#f5f3ff',
   },
@@ -45,7 +45,7 @@ export const hero = [
     title: 'InsightOut',
     subtitle: 'Create. Scale.',
     description:
-      'Great ideas deserve more than a start—they deserve momentum. From conception to execution, we design programmes and initiatives with the power to grow alongside your vision, ensuring that innovation turns into sustainable and scalable progress over time.',
+      'Great ideas deserve more than a start, they deserve momentum. From conception to execution, we design programmes and initiatives with the power to grow alongside your vision, ensuring that innovation turns into sustainable and scalable progress over time.',
     img: '/assets/image-2.jpg',
     color: '#fdf2f8',
   },
@@ -54,7 +54,7 @@ export const hero = [
     title: 'InsightOut',
     subtitle: 'Innovate. Sustain.',
     description:
-      'Innovation should not be fleeting—it should endure. We deliver forward-thinking, creative strategies that embrace sustainability at every stage, enabling organisations to push boundaries, inspire change, and contribute to a future that is prosperous and equitable for all.',
+      'Innovation should not be fleeting, it should endure. We deliver forward-thinking, creative strategies that embrace sustainability at every stage, enabling organisations to push boundaries, inspire change, and contribute to a future that is prosperous and equitable for all.',
     img: '/assets/image-2.jpg',
     color: '#f8fafc',
   },

@@ -23,17 +23,17 @@ const Hero = ({
       >
         <article className='flex flex-col w-full md:w-1/2 md:order-1 order-2'>
           <div className='flex flex-col w-full items-center justify-center sm:items-start mt-4'>
-            <h1 className='text-center capitalize poppins-extrabold sm:text-left text-4xl w-full md:w-[70%]  '>
-              {title}
+            <h1 className='text-center poppins-extrabold sm:text-left text-6xl w-full md:w-[70%]  text-[var(--primary-blue)]'>
+              Insight<span className="text-[var(--primary-orange)]">O</span>ut
             </h1>
-            <h3 className='text-4xl  sm:text-left text-center poppins-black '>
+            <h3 className='text-md md:text-xl  sm:text-left text-center poppins-black text-[var(--primary-blue)]'>
               {subtitle}
             </h3>
             <div>
-              <p className='text-sm text-gray-600 max-w-[500px] w-full mt-2 text-center md:text-left'>
+              <p className='text-sm text-gray-600 max-w-[500px] w-full mt-2 text-center sm:text-left'>
                 {description}
               </p>
-              <div className="w-[150px] flex justify-center items-center mx-auto md:mx-0">
+              <div className="w-[150px] flex items-center sm:items-start mx-auto sm:mx-0">
 
               <ButtonComponent label="Get Started" className="mt-4"/>
               </div>

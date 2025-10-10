@@ -34,8 +34,11 @@ const Home = () => {
       <div className='flex flex-col md:py-16 py-12'>
         <EventCardContainer />
       </div>
-      <div className='flex flex-col md:py-16 py-12'>
+      {/* <div className='flex flex-col md:py-16 py-12'>
         <TestimonialContainer/>
+      </div> */}
+      <div className='flex flex-col md:py-16 py-12'>
+        <BlogSlider />
       </div>
     </div>
   )

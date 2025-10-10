@@ -202,17 +202,17 @@ export const entities = [
   {
     sector: "Private Sector",
     description: "We partner with businesses to integrate social responsibility into operations, align commercial goals with the development agenda, and drive measurable social impact.",
-    image: '/assets/event-4.jpg'
+    image: '/assets/modern-business-center.jpg'
   },
   {
     sector: "Public Sector (Sovereigns)",
     description: "We work with government entities to fundraise for social impact initiatives, bridge the gap between policy design and implementation, and ensure programmes reach their beneficiaries.",
-    image: '/assets/event-3.jpg'
+    image: '/assets/Central-bank.jpg'
   },
   {
     sector: "Cross-Sector Collaborators",
     description: "We support partnerships that unite public, private, and non-profit actors to co-create scalable solutions for systemic challenges.",
-    image: '/assets/event-7.jpg'
+    image: '/assets/cross-collaboration.jpg'
   }
 ];
 

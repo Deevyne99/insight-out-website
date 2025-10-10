@@ -4,6 +4,7 @@ import MissionCardContainer from '../components/MissionCardContainer'
 import ApproachContainer from '../components/OurApproach'
 import ServiceCardContainner from '../components/ServiceCardContainer'
 import { developmentArray } from '../data/data'
+import { BlogSlider } from '../components/BlogSlider'
 
 export const About = () => {
   return (
@@ -26,6 +27,9 @@ export const About = () => {
       <div className='flex flex-col md:py-16 py-12'>
         <MissionCardContainer/>
       </div>
+      <div className='flex flex-col md:py-16 py-12'>
+              <BlogSlider />
+            </div>
     </section>
   )
 }

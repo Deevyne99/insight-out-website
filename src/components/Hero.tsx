@@ -30,7 +30,7 @@ const Hero = ({
               {subtitle}
             </h3>
             <div>
-              <p className='text-sm text-gray-600 max-w-[500px] w-full mt-2 text-center sm:text-left'>
+              <p className='text-sm text-gray-600 max-w-[500px] w-full mt-2 text-center sm:text-left poppins-regular'>
                 {description}
               </p>
               <div className="w-[150px] flex items-center sm:items-start mx-auto sm:mx-0">

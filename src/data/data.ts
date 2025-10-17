@@ -335,7 +335,7 @@ export const events = [
     name: 'Top 10 Event Themes That Never Fail',
     description:
       'Stuck on ideas? These crowd-pleasing event themes are sure to inspire your next big gathering.',
-    image: '/assets/AAD-2025-3.jpg',
+    image: '/assets/AAD-2025-4.jpg',
   }]
 
 

@@ -363,3 +363,88 @@ export const events = [
       image: '/assets/monitoring.jpg'
     }
   ]
+
+
+export const newBlogs = [
+  {
+    id: 1,
+    title: "Africa Agriculture Dialogue 2025: Unlocking Finance for Agricultural Transformation",
+    date: "2025-10-23",
+    author: "AAD Communications Team",
+    tags: ["Agriculture", "Finance", "Africa", "Dialogue", "Development"],
+    image: "/assets/AAD-dialogue.jpg",
+    summary: `
+      In October 2025, Abuja will host the Africa Agriculture Dialogue, the first time this global platform convenes on African soil. This is not a symbolic gesture; it is a recognition that Africa is ready to exercise sovereignty over the future of its food and nutrition security.
+
+      The theme, “Unlocking Finance for Agricultural Transformation in Africa,” speaks to the most persistent barrier facing African farmers. Smallholders, the majority of them women and youth, produce much of what Africa eats. Yet they remain excluded from the financial systems that should enable their growth. To unlock finance is to unlock opportunity, to give millions of farmers the means to move from subsistence to enterprise, from vulnerability to dignity.
+    `,
+    contentBlocks: [
+      {
+        label: "A theme that demands solutions",
+        items:[
+          `A theme that demands solutions: Finance is the bloodstream of agriculture, and its scarcity has long held the sector hostage. This Dialogue will not be about resurfacing old problems but about charting bold pathways to channel credit, insurance, and investment into agriculture at scale. Expect ideas that move from the theoretical to the implementable, from promise to practice.`,
+          `African voices shaping the agenda: For too long, Africa has been positioned as the subject of global conversations rather than the author of its own narrative. At AAD 2025, Africans will lead with clarity and confidence. Financiers, investors, researchers, and policymakers will bring their experiences to the table, not as afterthoughts but as the blueprint for global solutions.`,
+          `African voices shaping the agenda: For too long, Africa has been positioned as the subject of global conversations rather than the author of its own narrative. At AAD 2025, Africans will lead with clarity and confidence. Financiers, investors, researchers, and policymakers will bring their experiences to the table, not as afterthoughts but as the blueprint for global solutions.`,
+          `Partnerships that break silos: Transformation does not happen in isolation. The Dialogue will convene unlikely allies — farmers and financiers, policymakers and innovators, governments and philanthropists. In the same room, they will explore how to align risk, capital, and ambition. Expect conversations that blur boundaries and build bridges, creating partnerships strong enough to endure beyond the event.`,
+          `Real commitments: The true test of AAD 2025 will be what happens after the closing session. Dialogue is valuable, but its value is proven only when words translate into measurable action. This year, the Dialogue is designed not just to inspire but to consolidate. Commitments made in Abuja will be captured in a compact document — a living roadmap that will travel with Africa to the global stage in Des Moines later in the year. This compact will spell out the reforms, partnerships, and financing instruments pledged, from governments unlocking land and markets, to financial institutions deploying de-risking tools that give banks the confidence to lend, to private sector actors pledging investments that expand hectarage and transform livelihoods. Abuja will therefore not mark an end, but a beginning, with Des Moines as the next milestone for accountability and global resonance.`,
+          `A confident Africa on the global stage: Abuja will not just host a gathering. It will host a statement of intent. AAD 2025 will project Africa’s agricultural vision to the world — a continent ready to feed itself, to trade with itself, and to lead global food systems transformation. It will say with authority that Africa is not waiting for aid or sympathy. Africa is ready for investment, partnership, and leadership.`
+        ]
+      },
+      
+      
+    ],
+    closingNote: `
+      AAD 2025 will be both a mirror and a milestone, showcasing the progress made and the potential yet to be unlocked in Africa’s agricultural transformation. It is not just another conference — it is a declaration of readiness, resilience, and reform. Join us in Abuja to be part of the transformation.
+    `
+  },
+  {
+    id: 2,
+    title: "Bridging Nigeria’s Primary Healthcare Gap: Identifying the Issues and Laying Down Solutions",
+    date: "2025-10-23",
+    author: "Health Policy Desk",
+    tags: ["Healthcare", "Nigeria", "PHC", "Public Health", "Development"],
+    image: "/assets/primary-healthcare.jpg",
+    summary: `
+      Nigeria’s Primary Healthcare (PHC) system is designed to be the foundational first line of defense for the country’s population of over 220 million people, yet it is currently underperforming significantly. Recent estimates show that only around 20% of Nigeria’s approximately 30,000 PHC facilities are fully functional, leaving the vast majority of communities without consistent access to adequately equipped or staffed healthcare centers. This shortfall is particularly critical for maternal health; only about 1.8% of PHC facilities meet the minimum requirement of skilled birth attendants needed for safe deliveries, a dire gap contributing to Nigeria’s high maternal mortality ratio of roughly 512 deaths per 100,000 live births. Although there has been some progress with a 12% reduction in maternal mortality in 2025 compared to the previous year, much remains to be done to ensure safe antenatal and newborn care.
+
+      Fiscal commitments exacerbate the challenges: Nigeria’s federal health budget for 2024 allocated only about 4.6% of the national budget to the health sector, far below the 15% Abuja Declaration target recommended for African countries. This underfunding impedes large-scale PHC revitalization efforts. Furthermore, the country loses an estimated $1.1 to $1.2 billion annually to medical tourism, signaling both a trust deficit in local healthcare quality and a substantial economic loss that could otherwise be reinvested in strengthening domestic health services. Despite this, national efforts are underway to revitalize PHCs, with government programs adding and upgrading facilities and improving immunization coverage, showing early signs of progress in public confidence and usage of PHC services.
+
+      This context underscores an urgent need to bridge Nigeria’s primary healthcare gap through investment in infrastructure, skilled personnel, adequate funding, and community trust to restore the PHC system as an accessible, reliable cornerstone of the nation’s health security. Comprehensive reforms must address systemic weaknesses and leverage ongoing initiatives to reduce maternal mortality, improve service delivery, and curb financial leakages to medical tourism.
+    `,
+    contentBlocks: [
+      {
+        label: "Key Gaps in Nigeria’s Primary Healthcare System",
+        items: [
+          "Infrastructure and Functionality Deficit: Only about 20% of PHC facilities meet required service standards, with many lacking water, power, and essential drugs.",
+          "Shortage of Skilled Health Personnel: Just 1.8% of PHCs have the minimum number of skilled birth attendants required to ensure safe maternal care.",
+          "Inadequate Budget Allocation and Utilisation: Nigeria’s health budget falls well below the Abuja Declaration goal of 15% allocation to health.",
+          "Access, Utilisation, and Trust Barriers: Communities often bypass PHCs due to perceived or real poor quality of care and weak referral systems.",
+          "Governance, Accountability, and Programme Continuity Weaknesses: Coordination gaps between federal, state and local governments hinder consistent policy execution."
+        ]
+      },
+      {
+        label: "Four Key Government Interventions in 2025",
+        items: [
+          "Enhanced Financing through BHCPF 2.0: The government disbursed ₦32.9 billion via the Basic Health Care Provision Fund to strengthen PHC services nationwide.",
+          "Infrastructure and Equipment Upgrades: Over 900 PHCs have been rehabilitated with solar power, cold-chain storage, and essential medical supplies.",
+          "Human Resources Capacity Building: Training and incentivizing skilled birth attendants and community health extension workers across states.",
+          "Emergency Medical Service Expansion: The National Emergency Medical Service and Ambulance System now operates in over 30 states, improving rural access to urgent care."
+        ]
+      },
+      {
+        label: "Proposed Solutions to Strengthen Nigeria’s PHC System",
+        items: [
+          "Strengthen Infrastructure and Equipment: Focus investments on upgrading facilities and ensuring reliable supply chains for essential drugs and vaccines.",
+          "Expand and Retain Skilled Workforce: Enhance training programs and provide rural service incentives to curb health worker attrition.",
+          "Increase and Improve Health Financing: Scale up budget allocations toward the 15% Abuja Declaration target, ensuring transparent fund utilization.",
+          "Build Community Trust and Increase Access: Implement health education campaigns and revive community health committees to improve service uptake.",
+          "Governance and Accountability Enhancements: Improve coordination across government tiers and embed PHC reforms into law to ensure sustainability."
+        ]
+      }
+    ],
+    closingNote: `
+      Reimagining Nigeria’s PHC system demands a mix of political will, investment, and accountability. Strengthening governance, financing, and community trust will not only save lives but also serve as the foundation for a resilient national health architecture.
+    `
+  }
+];
+

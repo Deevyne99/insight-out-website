@@ -19,18 +19,16 @@ const Home = () => {
         <AboutSection />
       </div>
       <div className='flex flex-col md:py-16 py-12'>
-        <MissionCardContainer />
-      </div>
-      <div className='flex flex-col md:py-16 py-12'>
-        <BlogSlider />
-      </div>
-      <div className='flex flex-col md:py-16 py-12'>
         <ServiceCardContainner heading={'what we do'} data={services} />
       </div>
-
       <div className='flex flex-col md:py-16 py-12'>
         <ClientContainer />
       </div>
+      <div className='flex flex-col md:py-16 py-12'>
+        <MissionCardContainer />
+      </div>
+      
+
       <div className='flex flex-col md:py-16 py-12'>
         <EventCardContainer />
       </div>

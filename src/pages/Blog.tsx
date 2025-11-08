@@ -50,7 +50,7 @@ const Blog: React.FC = () => {
       </button>
 
       {/* Blog image */}
-      <div className="w-full flex  justify-center mb-6 h-[400px]">
+      <div className="w-full flex  justify-center mb-6 ">
         <img
           src={blog.image}
           alt={blog.title || "Blog image"}

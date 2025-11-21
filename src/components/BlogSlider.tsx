@@ -12,11 +12,11 @@ export const BlogSlider = () => {
     }
   }
 
-  const handlePrev = () => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollBy({ left: -scrollAmount, behavior: 'smooth' })
-    }
-  }
+  // const handlePrev = () => {
+  //   if (scrollRef.current) {
+  //     scrollRef.current.scrollBy({ left: -scrollAmount, behavior: 'smooth' })
+  //   }
+  // }
 
   return (
     <div className='flex flex-col '>

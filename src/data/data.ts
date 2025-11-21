@@ -471,7 +471,7 @@ President Bola Ahmed Tinubu, represented by his Senior Special Assistant on Live
       }
     ],
     closingNote: `
-      Reimagining Nigeria’s PHC system demands a mix of political will, investment, and accountability. Strengthening governance, financing, and community trust will not only save lives but also serve as the foundation for a resilient national health architecture.
+     
     `
   },
   {

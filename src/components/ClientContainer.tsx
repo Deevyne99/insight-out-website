@@ -13,9 +13,9 @@ const ClientContainer = () => {
   return (
     <div className='flex flex-col  container'>
       
-      <h2 className='text-2xl font-bold mb-4 poppins-extrabold'>Who We Serve</h2>
-      <div className='flex mt-4'>
-        <div className='md:grid sm:grid-cols-2 lg:grid-cols-4 hidden gap-4  overflow-x-auto flex-nowrap w-full scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100'>
+      <h2 className='text-2xl font-bold mb-4 poppins-extrabold '>Who We Serve</h2>
+      <div className='flex mt-4 justify-center items-center flex-col '>
+        <div className='md:grid justify-center mx-auto sm:grid-cols-2  lg:grid-cols-3 hidden gap-4  overflow-x-auto flex-nowrap w-full scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100'>
           {entities.map((blog) => (
             <ClientsCard key={blog.sector} description={blog.description} sector={blog.sector} bg={`url('${blog.image}')`}/>
           ))}

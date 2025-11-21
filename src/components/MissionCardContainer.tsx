@@ -5,7 +5,7 @@ import MissionCard from './MissionCard'
 const MissionCardContainer = () => {
 
   return (
-    <div className=' flex flex-col bg-[var(--background-light)]  py-24'>
+    <div className=' flex flex-col   py-24'>
       <div className='container flex   flex-col md:flex-row  gap-6'>
         {
           infoArray.map((attribute) =>{

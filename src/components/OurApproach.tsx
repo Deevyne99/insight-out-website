@@ -19,7 +19,7 @@ const ApproachContainer = () => {
 
   return (
     <div className='md:h-[550px]   flex flex-col container w-full oveflow-hidden   '>
-        <h2 className='flex  justify-center items-center text-3xl font-bold w-full'>Our Unique Approach</h2>
+        <h2 className='flex  justify-center items-center text-3xl poppins-extrabold  w-full'>Our Unique Approach</h2>
       <div className='flex justify-center flex-col md:flex-row gap-6 w-full h-full mt-8'>
         <div className='hidden md:flex flex-col order-1 bg-gray-100 justify-between'>
           {approach
@@ -48,13 +48,13 @@ const ApproachContainer = () => {
                 >
                   <div className='flex   w-full'>
                     <article
-                      className={`flex w-lg flex-col transition-transform duration-400 ${productIndex === index? 'bg-[var(--background-light)]' :''} cursor-pointer  p-2`}
+                      className={`flex w-lg flex-col transition-transform duration-400 ${productIndex === index? 'bg-[var(--background-light)]' :''} cursor-pointer p-2 py-4`}
                      onClick={() => handleSLider(index)}>
                       <div>
-                        <h5 className='text-md md:text-left text-center text-[#94a3b8] max-w-[550px] font-bold'>
+                        <h5 className='text-md md:text-left text-center text-[var(--primary-blue)] max-w-[550px] font-bold'>
                           {name}
                         </h5>
-                        <p className='text-[#94a3b8] w-full  p-2 text-center md:text-left text-sm'>
+                        <p className='text-[#94a3b8] w-full  p-0 text-center md:text-left text-sm'>
                           {description  }
                         </p>
                       </div>

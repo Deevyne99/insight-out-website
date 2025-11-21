@@ -22,15 +22,14 @@ const Sidebar = ({ openSidebar, handleOpenSidebar }: SidebarProps) => {
         style={{ willChange: 'transform' }}
       >
         <button onClick={handleOpenSidebar}>
-          <FiX />
+          <FiX className='text-2xl'/>
         </button>
-        <ul className='gap-8 flex flex-col text-[#94a3b8] capitalize font-bold'>
+        <ul className='gap-8 flex flex-col text-gray-800 capitalize'>
           {links.map((link) => (
             <li key={link.id} className='hover:text-[var(--primary-blue)] transition-colors duration-300'>
               <Link onClick={()=>handleOpenSidebar()} to={link.url}>{link.name}</Link>
             </li>
           ))}
-         
         </ul>
       </aside>
     </Modal>

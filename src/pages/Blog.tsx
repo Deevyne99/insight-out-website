@@ -1,7 +1,15 @@
+// ...existing code...
 import React from "react";
 import { GoArrowLeft } from "react-icons/go";
 import { newBlogs } from "../data/data";
 import { useParams, useNavigate } from "react-router-dom";
+
+type ContentBlock = {
+  label?: string;
+  text?: string;
+  items?: string[];
+  subtitles?: { title?: string; description?: string };
+};
 
 const Blog: React.FC = () => {
   const { id } = useParams<{ id?: string }>();
@@ -50,11 +58,11 @@ const Blog: React.FC = () => {
       </button>
 
       {/* Blog image */}
-      <div className="w-full flex  justify-center mb-6 ">
+      <div className="w-full flex justify-center mb-6">
         <img
           src={blog.image}
           alt={blog.title || "Blog image"}
-          className="rounded-2xl w-full md:max-w-4xl   h-full  object-contain"
+          className="rounded-2xl w-full md:max-w-4xl h-full object-contain"
         />
       </div>
 
@@ -64,8 +72,7 @@ const Blog: React.FC = () => {
           {blog.title}
         </h2>
         <p className="text-gray-500 text-sm md:text-base">
-          {blog.author} •{" "}
-          {blog.date ? new Date(blog.date).toDateString() : ""}
+          {blog.author} • {blog.date ? new Date(blog.date).toDateString() : ""}
         </p>
       </div>
 
@@ -77,37 +84,50 @@ const Blog: React.FC = () => {
       )}
 
       {/* Main content blocks */}
-      <div className="max-w-4xl mx-auto space-y-8">
+      <div className="max-w-4xl mx-auto space-y-6">
         {Array.isArray(blog.contentBlocks) &&
-          blog.contentBlocks.map((block, index) => (
-            <div key={index}>
-              {block.label && (
-                <h4 className="text-lg md:text-md font-semibold text-gray-900 mb-2">
-                  {block.label}
-                </h4>
-              )}
+          blog.contentBlocks.map((blockRaw: any, index: number) => {
+            const block = blockRaw as ContentBlock;
+            const subtitleTitle = block.subtitles?.title;
+            const items = Array.isArray(block.items) ? block.items : [];
+            // remove duplicate item if it matches subtitle title
+            const filteredItems = subtitleTitle ? items.filter((it) => it !== subtitleTitle) : items;
 
-              {/* Paragraph text */}
-              {"text" in block && typeof block.text === 'string' && (
-                <p className="text-gray-700 leading-relaxed text-justify mb-4">
-                  {block.text}
-                </p>
-              )}
+            return (
+              <div key={index}>
+                {block.label && (
+                  <h4 className="text-lg md:text-md font-semibold text-gray-900 mb-2">
+                    {block.label}
+                  </h4>
+                )}
+                {block.subtitles?.description && (<p>{block.subtitles?.description}</p>)}
 
-              {/* Bullet list */}
-              {"items" in block &&
-                Array.isArray(block.items) &&
-                block.items.length > 0 && (
-                  <ul className="list-disc list-outside pl-6 text-gray-700 leading-relaxed text-justify space-y-2">
-                    {block.items.map((item, i) => (
-                      <li key={i} className="marker:text-gray-600">
-                        {item}
+                {/* Paragraph text */}
+                {typeof block.text === "string" && (
+                  <p className="text-gray-700 leading-relaxed text-justify mb-2">
+                    {block.text}
+                  </p>
+                )}
+
+                
+
+                {/* Items: single item -> paragraph, multiple -> list, none -> nothing */}
+                {filteredItems.length === 1 ? (
+                  <p className="text-gray-700 leading-relaxed whitespace-pre-line mt-2">
+                    {filteredItems[0]}
+                  </p>
+                ) : filteredItems.length > 1 ? (
+                  <ul className="list-disc list-outside mt-2 text-gray-700 leading-relaxed space-y-1 pl-5">
+                    {filteredItems.map((item, i) => (
+                      <li key={i} className="marker:text-gray-600 whitespace-pre-line ">
+                       <p>{item}</p>
                       </li>
                     ))}
                   </ul>
-                )}
-            </div>
-          ))}
+                ) : null}
+              </div>
+            );
+          })}
       </div>
 
       {/* Closing note */}
@@ -121,3 +141,4 @@ const Blog: React.FC = () => {
 };
 
 export default Blog;
+// ...existing code...

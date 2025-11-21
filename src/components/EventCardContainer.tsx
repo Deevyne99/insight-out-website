@@ -17,7 +17,7 @@ const EventCardContainer = () => {
   useEffect(() => {
     intervalRef.current = setInterval(() => {
       setActive((prev) => (prev + 1) % events.length)
-    }, 3000) // Change every 3 seconds
+    }, 5000) // Change every 3 seconds
     return () => {
       if (intervalRef.current) clearInterval(intervalRef.current)
     }

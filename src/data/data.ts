@@ -322,7 +322,7 @@ export const events = [
     name: `Site Visit to SCL (Sa'i'anwara'I'jumai Consultaire Limited)`,
     description:
       'Our team visited SCL to gain insight into their work in regenerative agriculture and their commitment to sustainable food systems. It was inspiring to see how they integrate soil health, climate-smart practices, and long-term ecosystem resilience into their approach to agriculture.',
-    image: '/assets/SCL-visit.jpg',
+    image: '/assets/SCL-visit-2.jpeg',
   },
   ]
 
